@@ -18,23 +18,58 @@ body {
     height: 30rem;
     border: solid 1px crimson;
     margin: auto;
+    margin-top: 7%;
     color: #FFF;
-}
-
-.choice-bar {
-    border: solid 1px crimson;
-    margin: auto;
-    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #firstMem {
     margin-right: 5px;
 } 
 
+#firstMem:checked + label {
+    color: red;
+}
+
 #secMem {
     margin-right: 5px;
 } 
 
+#secMem:checked + .label2 {
+    color: red;
+    margin-bottom: 30%;
+}
+
 #thiMem {
     margin-right: 5px;
 } 
+
+#thiMem:checked + label {
+    color: red;
+}
+
+#fourMem:checked + label {
+    color: red;
+}
+
+.label1 {
+    position: absolute;
+    margin-bottom: 63%;
+}
+
+.label2 {
+    position: absolute;
+    margin-bottom: 63%;
+}
+
+.label3 {
+    position: absolute;
+    margin-bottom: 63%;
+}
+
+.label4 {
+    position: absolute;
+    margin-bottom: 63%;
+}
