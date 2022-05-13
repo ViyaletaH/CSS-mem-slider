@@ -25,51 +25,97 @@ body {
     align-items: flex-end;
 }
 
-#firstMem {
-    margin-right: 5px;
-} 
-
-#firstMem:checked + label {
-    color: red;
-}
-
-#secMem {
-    margin-right: 5px;
-} 
-
-#secMem:checked + .label2 {
-    color: red;
-    margin-bottom: 30%;
-}
-
-#thiMem {
-    margin-right: 5px;
-} 
-
-#thiMem:checked + label {
-    color: red;
-}
-
-#fourMem:checked + label {
-    color: red;
-}
 
 .label1 {
     position: absolute;
     margin-bottom: 63%;
+    display:flex;
+    flex-direction: column;
+    transition: 1.5s;
 }
 
 .label2 {
     position: absolute;
     margin-bottom: 63%;
+    display:flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.text {
+    margin-top: 2%;
 }
 
 .label3 {
     position: absolute;
     margin-bottom: 63%;
+    display:flex;
+    flex-direction: column;    
+    transition: 1.5s;
 }
 
 .label4 {
     position: absolute;
     margin-bottom: 63%;
+     display:flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.label5 {
+    position: absolute;
+    margin-bottom: 63%;
+    transition: 1.5s;
+}
+
+#firstMem {
+    margin-right: 2%;
+} 
+
+#firstMem:checked + .label1 {
+    margin-bottom: 1.8%;
+}
+
+#secMem {
+    margin-right: 2%;
+} 
+
+#secMem:checked + .label2 {
+    margin-bottom: 1.8%;}
+
+#thiMem {
+    margin-right: 2%;
+} 
+
+#thiMem:checked + .label3 {
+    margin-bottom: 1.8%;
+}
+
+#fourMem {
+    margin-right: 2%;
+} 
+
+#fourMem:checked + .label4 {
+    margin-bottom: 1.8%;
+}
+
+#fifMem:checked + .label5 {
+    margin-bottom: 1.8%;
+}
+
+
+.firstImg {
+    height: 28rem;
+}
+
+.secImg {
+    height: 28rem;
+}
+
+.thirdImg {
+    height: 28rem;
+}
+
+.fourthImg {
+    height: 28rem;
 }
