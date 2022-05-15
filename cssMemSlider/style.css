@@ -192,8 +192,8 @@ input[type=radio]:checked {
     }
 
     .window {
-        width: 500px;
-        height: 400px;
+        width: 31.25rem;
+        height: 25rem;
         margin-top: 10%;
     }
 
@@ -228,8 +228,8 @@ input[type=radio]:checked {
 
 @media screen and (max-width: 700px) and (min-width: 500px){
     .window {
-        width: 500px;
-        height: 400px;
+        width: 31.25rem;
+        height: 25rem;
         margin-top: 15%;
     }
     
@@ -262,8 +262,8 @@ input[type=radio]:checked {
 
 @media screen and (max-width: 500px) and (min-width: 300px){
     .window {
-        width: 300px;
-        height: 400px;
+        width: 18.75rem;
+        height: 25rem;
         margin-top: 15%;
     }
         
