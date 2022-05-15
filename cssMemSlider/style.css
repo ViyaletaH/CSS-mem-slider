@@ -1,5 +1,6 @@
 body {
     background-color: #000000;
+    overflow: hidden;
 }
 
 a {
@@ -25,6 +26,7 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    
 }
 
 .window {
@@ -57,6 +59,8 @@ a:active {
 
 .text {
     margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
 }
 
 .label3 {
@@ -86,7 +90,7 @@ a:active {
 }
 
 #firstMem:checked+.label1 {
-    margin-bottom: 2.5%;
+    margin-bottom: 3.5%;
 }
 
 #secMem {
@@ -94,7 +98,7 @@ a:active {
 }
 
 #secMem:checked+.label2 {
-    margin-bottom: 2.5%;
+    margin-bottom: 3%;
 }
 
 #thiMem {
@@ -102,7 +106,7 @@ a:active {
 }
 
 #thiMem:checked+.label3 {
-    margin-bottom: 2.5%;
+    margin-bottom: 3%;
 }
 
 #fourMem {
@@ -110,11 +114,11 @@ a:active {
 }
 
 #fourMem:checked+.label4 {
-    margin-bottom: 2.5%;
+    margin-bottom: 2%;
 }
 
 #fifMem:checked+.label5 {
-    margin-bottom: 2.5%;
+    margin-bottom: 1.5%;
 }
 
 .firstImg {
@@ -123,6 +127,7 @@ a:active {
 
 .secImg {
     height: 62.92134831460674vh;
+    max-width: 100%;
 }
 
 .thirdImg {
@@ -179,4 +184,188 @@ input[type=radio]:active {
 input[type=radio]:checked {
     cursor: pointer;
     box-shadow: #0066ff 0.063rem 0.063rem 0.313rem 0.313rem;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 700px){
+    body {
+        overflow: hidden;
+    }
+
+    .window {
+        width: 500px;
+        height: 400px;
+        margin-top: 10%;
+    }
+
+    #firstMem:checked+.label1 {
+        margin-bottom: 5%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 5%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 5%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 4%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 3%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) and (min-width: 701px) {
+    .fifthImg {
+        height: 45vh;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+    .window {
+        width: 500px;
+        height: 400px;
+        margin-top: 15%;
+    }
+    
+    #firstMem:checked+.label1 {
+        margin-bottom: 7%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 5%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 7%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 4%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 3%;
+    }
+
+    .fifthImg {
+        height: 40vh;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+    .window {
+        width: 300px;
+        height: 400px;
+        margin-top: 15%;
+    }
+        
+    #firstMem:checked+.label1 {
+        margin-bottom: 9%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 9%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 9%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 5%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 5%;
+    }
+
+    .fifthImg {
+        height: 35vh;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 430px) and (min-width: 300px){
+    .label1 {
+        margin-bottom: 300%;
+    }
+    
+    .label2 {
+        margin-bottom: 270%;
+    }
+ 
+    .label3 {
+        margin-bottom: 270%;
+    }
+    
+    .label4 {
+        margin-bottom: 270%;
+    }
+    
+    .label5 {
+        margin-bottom: 270%;
+    }
+
+    label {
+        margin: auto;
+        align-self: center;
+    }
+
+    .firstImg {
+        height: 50vh;
+        max-width: 100%;
+    }
+    
+    .secImg {
+        height: 45vh;
+        max-width: 100%;
+    }
+    
+    .thirdImg {
+        height: 50vh;
+        max-width: 100%;
+    }
+    
+    .fourthImg {
+        height: 50vh;
+        max-width: 100%;        
+    }
+    
+    .fifthImg {
+        height: 25vh;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+        
+    #firstMem:checked+.label1 {
+        margin-bottom: 12%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 12%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 12%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 12%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 8%;
+    }
+
 }
