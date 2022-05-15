@@ -1,0 +1,371 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+a:hover {
+    text-shadow: #dd00ff 0.063rem 0 0.625rem;
+}
+
+a:active {
+    text-shadow: #ffdd00 0.063rem 0 0.625rem;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.window {
+    width: 93.6768149882904vw;
+    height: 67.41573033707866vh;
+    margin: auto;
+    margin-top: 7%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.label1 {
+    position: absolute;
+    margin-bottom: 103%;
+    display: flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.label2 {
+    position: absolute;
+    margin-bottom: 103%;
+    display: flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.text {
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+.label3 {
+    position: absolute;
+    margin-bottom: 103%;
+    display: flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.label4 {
+    position: absolute;
+    margin-bottom: 103%;
+    display: flex;
+    flex-direction: column;
+    transition: 1.5s;
+}
+
+.label5 {
+    position: absolute;
+    margin-bottom: 103%;
+    transition: 1.5s;
+}
+
+#firstMem {
+    margin-right: 2%;
+}
+
+#firstMem:checked+.label1 {
+    margin-bottom: 3.5%;
+}
+
+#secMem {
+    margin-right: 2%;
+}
+
+#secMem:checked+.label2 {
+    margin-bottom: 3%;
+}
+
+#thiMem {
+    margin-right: 2%;
+}
+
+#thiMem:checked+.label3 {
+    margin-bottom: 3%;
+}
+
+#fourMem {
+    margin-right: 2%;
+}
+
+#fourMem:checked+.label4 {
+    margin-bottom: 2%;
+}
+
+#fifMem:checked+.label5 {
+    margin-bottom: 1.5%;
+}
+
+.firstImg {
+    height: 62.92134831460674vh;
+}
+
+.secImg {
+    height: 62.92134831460674vh;
+    max-width: 100%;
+}
+
+.thirdImg {
+    height: 62.92134831460674vh;
+}
+
+.fourthImg {
+    height: 62.92134831460674vh;
+    
+}
+
+.fifthImg {
+    height: 62.92134831460674vh;
+    max-width: 100%;
+}
+
+.text {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 5%;
+    }
+}
+
+input {
+    cursor: pointer;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 3%;
+    border-radius: 50%;
+    padding: 0.625rem;
+    border: solid 0.313rem transparent;
+}
+
+input[type=radio]:hover {
+    cursor: pointer;
+    box-shadow: #dd00ff 0.063rem 0.063rem 0.313rem 0.313rem;
+}
+
+input[type=radio]:active {
+    cursor: pointer;
+    box-shadow: #ffdd00 0.063rem 0.063rem 0.313rem 0.313rem;
+}
+
+input[type=radio]:checked {
+    cursor: pointer;
+    box-shadow: #0066ff 0.063rem 0.063rem 0.313rem 0.313rem;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 700px){
+    body {
+        overflow: hidden;
+    }
+
+    .window {
+        width: 31.25rem;
+        height: 25rem;
+        margin-top: 10%;
+    }
+
+    #firstMem:checked+.label1 {
+        margin-bottom: 5%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 5%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 5%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 4%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 3%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) and (min-width: 701px) {
+    .fifthImg {
+        height: 45vh;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+    .window {
+        width: 31.25rem;
+        height: 25rem;
+        margin-top: 15%;
+    }
+    
+    #firstMem:checked+.label1 {
+        margin-bottom: 7%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 5%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 7%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 4%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 3%;
+    }
+
+    .fifthImg {
+        height: 40vh;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+    .window {
+        width: 18.75rem;
+        height: 25rem;
+        margin-top: 15%;
+    }
+        
+    #firstMem:checked+.label1 {
+        margin-bottom: 9%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 9%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 9%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 5%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 5%;
+    }
+
+    .fifthImg {
+        height: 35vh;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 430px) and (min-width: 300px){
+    .label1 {
+        margin-bottom: 300%;
+    }
+    
+    .label2 {
+        margin-bottom: 270%;
+    }
+ 
+    .label3 {
+        margin-bottom: 270%;
+    }
+    
+    .label4 {
+        margin-bottom: 270%;
+    }
+    
+    .label5 {
+        margin-bottom: 270%;
+    }
+
+    label {
+        margin: auto;
+        align-self: center;
+    }
+
+    .firstImg {
+        height: 50vh;
+        max-width: 100%;
+    }
+    
+    .secImg {
+        height: 45vh;
+        max-width: 100%;
+    }
+    
+    .thirdImg {
+        height: 50vh;
+        max-width: 100%;
+    }
+    
+    .fourthImg {
+        height: 50vh;
+        max-width: 100%;        
+    }
+    
+    .fifthImg {
+        height: 25vh;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+        
+    #firstMem:checked+.label1 {
+        margin-bottom: 12%;
+    }
+
+    #secMem:checked+.label2 {
+        margin-bottom: 12%;
+    }
+
+    #thiMem:checked+.label3 {
+        margin-bottom: 12%;
+    }
+    
+    #fourMem:checked+.label4 {
+        margin-bottom: 12%;
+    }
+    
+    #fifMem:checked+.label5 {
+        margin-bottom: 8%;
+    }
+
+}
